@@ -8,9 +8,6 @@
     }
 */
 
-// This is a "method-only" submission.
-// You only need to complete this method.
-
 function deleteNode(head, position) {
     var count = 0;
     var prev ;
