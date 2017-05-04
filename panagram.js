@@ -5,17 +5,20 @@
 function processData(input) {
     //Enter your code here
     var str = input;
-    var arr =['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-    var obj ={};
+    var obj1 ={};
     
-    for(var i = 0; i < arr.length;i++){
-       var ch = arr[i];
-        if(obj[ch]){
-            return false;
-        } else {
-            obj[ch]= true;
+   for(var i = 0; i < str.length;i++){
+       var ch = str[i].toLowerCase();
+         if(obj1[ch]){
+            continue;
+        } else if(ch == ' '){
+            continue;
+        } 
+       else {
+            obj1[ch]= true;
         }
     }
-    
-    console.log(obj.length);
+    var size = Object.keys(obj1).length;
+    if(size == 26) console.log("pangram");
+    else console.log("not pangram");
 } 
