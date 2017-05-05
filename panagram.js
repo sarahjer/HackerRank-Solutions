@@ -1,4 +1,4 @@
-//Given a sentence , tell Roy if it is a pangram or not.
+//Given a sentence , check if it is a pangram or not.
 
 
 
